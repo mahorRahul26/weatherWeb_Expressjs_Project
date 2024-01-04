@@ -8,25 +8,22 @@
    {{>navbar}}
 
    <!-- main header -->
-   <div class="container-fluid main_header">
+    <div class="main_header">
+
         <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <!-- left side div  -->
-                    <div class="col-md-12 col-12 main_header_right align-items-center">
-                        <figure class="errimg">
-                            <img src="/image/404.png" alt="" title="">
-                        </figure>
-                    
-                        <p>Wellcome to Rahul Developer World</p>
-                        <h1>{{errorMsg}}</h1>
-                        <a href="/"><button>Go Back</button></a>
-                    </div>
-                    
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="main_header_left align-items-center">
+                    <figure class="errimg">
+                        <img src="/image/404.png" alt="rahul" title="errorImage" class="img-fluid">
+                    </figure>
+                    <p> Welcome to Rahul developer World</p>
+                    <h1 style="text-align: center;"> {{errorMsg}}</h1>
+                    <a href="/"><button>Go Back</button></a>
                 </div>
             </div>
+
         </div>
-   </div>
+    </div>
    <!-- footer code -->
 {{>footer}}
 </body>

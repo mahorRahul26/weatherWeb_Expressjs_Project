@@ -15,6 +15,7 @@
 }
 
 html{
+    height: 100%;
     font-size: 62.5%;
 }
 
@@ -22,9 +23,6 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 .row{
@@ -54,7 +52,7 @@ body{
 }
 
 .navbar-toggler{
-    background-color: gray;
+    background-color: #718093;
 }
 
 .fa-snowflake{
@@ -113,8 +111,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center; 
 }
+
 
 .main_header_right figure img{
     filter: drop-shadow(0 2rem 4rem  rgba(0, 0, 0, 0.453));
@@ -220,6 +219,7 @@ body{
     font-weight: 900;
 }
 
+
 sup{
     font-size: 6rem;
     margin-top: -2rem;
@@ -232,11 +232,11 @@ sup{
 
 /* error page style */
 
-.errimg img{
-    width: 60rem;
-    height: 50rem;
+.main_header_left .errimg img{
+    width: 50rem;
+    height: 40rem;
 }
-.main_header_right button{
+/* .main_header_right button{
     border: none;
     padding: 0.8rem 1.8rem;
     font-size: 1.4rem;
@@ -246,7 +246,7 @@ sup{
 }
 .main_header_right button:hover{
     box-shadow: 0 10px 8px -5px var(--main-color);
-}
+} */
 
 /* footer code  */
 
@@ -268,7 +268,7 @@ footer p {
 
 /* responsive code  */
 
-@media(max-width: 769px){
+@media(max-width: 768px){
     .main_header_left{
         height: auto;
         margin: 5rem 0;
@@ -284,5 +284,10 @@ footer p {
     }
     .tempInformation{
         width: auto;
+    }
+    .main_layer .middle_layer p,
+    .main_layer .middle_layer .fa-solid {
+      font-size: 5rem;
+      font-weight: 900;
     }
 }
